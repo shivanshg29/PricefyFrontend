@@ -4,7 +4,7 @@ import './RecentSearches.css';
 const RecentSearches = ({ searches, onSearchClick ,onDisplayText }) => {
   return (
     <div className="recent-searches">
-      <h2>Recent Searches</h2>
+      <h2>Recents</h2>
       <div className="recent-searches-grid">
         {searches.map((search, index) => (
           <div

@@ -1,0 +1,50 @@
+/* Basic styling for the toggle button */
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.toggle-btn:hover {
+  background-color: #45a049;
+}
+
+/* The side panel */
+.side-panel {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hidden on the left */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  transition: left 0.3s ease; /* Slide transition */
+  z-index: 999; /* Make sure the panel is above other content */
+}
+
+/* When the panel is open, shift it to the left */
+.side-panel.open {
+  left: 0;
+}
+
+/* Content inside the panel */
+.panel-content {
+  padding: 20px;
+}
+
+.panel-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.panel-content p {
+  font-size: 16px;
+}
