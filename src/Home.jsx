@@ -27,8 +27,8 @@ const Home = () => {
     });
 
     try {
-      const amazonResponse = await axios.get(`http://127.0.0.1:8000/api/amazon/?item=${query}`);
-      const flipkartResponse = await axios.get(`http://127.0.0.1:8000/api/flipkart/?item=${query}`);
+      const amazonResponse = await axios.get(`https://d66e-112-196-126-3.ngrok-free.app/api/amazon/?item=${query}`);
+      const flipkartResponse = await axios.get(`https://d66e-112-196-126-3.ngrok-free.app/api/flipkart/?item=${query}`);
       setAmazonProducts(amazonResponse.data);
       setFlipkartProducts(flipkartResponse.data);
     } catch (error) {
